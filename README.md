@@ -1,11 +1,26 @@
 # distinct_events _asc
 Acoustic Scene Classification by Implicitly Identifying Distinct Sound Events
 
-## install packages
+## install
+* create env and activate
+```bash
+conda create -n distinct_events_asc python=3.6 pip
+source activate distinct_events_asc
 ```
-# install in a new virtual environments
+* install pytorch torchvision from pytorch channel
+```bash
+conda install pytorch torchvision -c pytorch
+```
+* install requirements with pip
+```bash
 pip install -r requirements.txt
 ```
+* if want to run jupyter notebook examples, install a `kernelspec` for env
+```
+conda install jupyter ipykernel
+python -m ipykernel install --user --name asc_mt --display-name 'python3.6(asc_mt)'
+```
+
 ## data_manager
 * create file `data_manager.cfg` under `data_manager/`
 * specify dev_path to point to dcase2018 Task1 SubTaskB dataset
