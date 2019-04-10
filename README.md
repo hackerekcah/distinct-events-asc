@@ -18,7 +18,7 @@ pip install -r requirements.txt
 * if want to run jupyter notebook examples, install a `kernelspec` for env
 ```
 conda install jupyter ipykernel
-python -m ipykernel install --user --name asc_mt --display-name 'python3.6(asc_mt)'
+python -m ipykernel install --user --name distinct_events_asc --display-name 'python3.6(distinct_events_asc)'
 ```
 
 ## data_manager
@@ -33,9 +33,10 @@ dev_path = /PathTo.../dcase2018_baseline/task1/datasets/TUT-urban-acoustic-scene
 
 [logmel]
 sr = 44100
-n_fft = 1102
-hop_length = 1102
-n_mels = 64
+n_fft = 1764
+hop_length = 882
+n_mels = 40
+fmax = 22050
 ```
 
 * extract and store feature in .h5 file
@@ -46,4 +47,5 @@ python data_manager/dcase18_taskb.py
 python data_manager/taskb_standrizer.py
 ```
 
-## model
+## Experiments
+* run experiments notebooks under `jupyter_exp/`
