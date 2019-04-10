@@ -1,5 +1,4 @@
-# distinct_events _asc
-Acoustic Scene Classification by Implicitly Identifying Distinct Sound Events
+# Acoustic Scene Classification by Implicitly Identifying Distinct Sound Events
 
 ## install
 * create env and activate
