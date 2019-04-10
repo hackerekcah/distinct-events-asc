@@ -11,6 +11,7 @@ from models.milpool import MILPooler
 
 class CNN_MIL(BaseModel):
     """
+    conv_blocks + single detector + max-pooling
     """
     def __init__(self, args):
         super(CNN_MIL, self).__init__()
@@ -45,6 +46,7 @@ class CNN_MIL(BaseModel):
 
 class CNN_MD_MIL(BaseModel):
     """
+    conv_blocks + multi-detector + max-pooling
     """
     def __init__(self, args):
         super(CNN_MD_MIL, self).__init__()
@@ -87,7 +89,7 @@ class CNN_MD_MIL(BaseModel):
 
 class CNN_MTS_MIL(BaseModel):
     """
-    Fully Convolutional Model, 4*[(conv-bn-relu)*2-max_pool] + conv256(4,1) + fc(256,10)
+    conv_blocks + multi-temporal-scale + single detector + max-pooling
     """
     def __init__(self, args):
         super(CNN_MTS_MIL, self).__init__()
@@ -127,7 +129,7 @@ class CNN_MTS_MIL(BaseModel):
 
 class CNN_MTS_MD_MIL(BaseModel):
     """
-    Fully Convolutional Model, 4*[(conv-bn-relu)*2-max_pool] + conv256(4,1) + fc(256,10)
+    conv_blocks + multi-temporal-scale + single detector + max-pooling
     """
     def __init__(self, args):
         super(CNN_MTS_MD_MIL, self).__init__()

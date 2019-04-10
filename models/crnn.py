@@ -126,14 +126,14 @@ def conv1x1(in_channels, out_channels, stride=1):
 class MultiResolutionBlock(nn.Module):
     def __init__(self, in_channels, out_channels, combine_type='no'):
         """
-
+        combine multi-temporal-scale features, by concatenating  dilated convs
         :param in_channels:
         :param out_channels:
         :param combine_type:
-            no
-            conv2d
-            conv1d
-            last
+            no: concat featuremaps without combination
+            conv2d: each feature map as one channel
+            conv1d: each channel as one input channel
+            last: only use the biggest temporal-scale
         """
         super(MultiResolutionBlock, self).__init__()
         # (B, C, T) -> (B, C, T)
