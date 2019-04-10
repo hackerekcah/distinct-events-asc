@@ -38,7 +38,7 @@ hop_length = 1102
 n_mels = 64
 ```
 
-### extract and store feature in .h5 file
+* extract and store feature in .h5 file
 ```
 # generate .h5 files under data_manager/data_h5 
 python data_manager/dcase18_taskb.py
