@@ -22,6 +22,7 @@ python -m ipykernel install --user --name asc_mt --display-name 'python3.6(asc_m
 ```
 
 ## data_manager
+*NOTE: before use, config __data_manager.cfg__ properly*
 * create file `data_manager.cfg` under `data_manager/`
 * specify dev_path to point to dcase2018 Task1 SubTaskB dataset
 ``` python
@@ -36,9 +37,13 @@ n_fft = 1102
 hop_length = 1102
 n_mels = 64
 ```
-* run dcase18_taskb.py and taskb_standrizer.py to generate feature file
-``` python
-python dcase18_taskb.py
-python taskb_standrizer.py
+
+### extract and store feature in .h5 file
 ```
+# generate .h5 files under data_manager/data_h5 
+python data_manager/dcase18_taskb.py
+# generate scaler .h5 under data_manager/data_h5
+python data_manager/taskb_standrizer.py
+```
+
 ## model
