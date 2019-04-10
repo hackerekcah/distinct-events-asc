@@ -48,4 +48,7 @@ python data_manager/taskb_standrizer.py
 ```
 
 ## Experiments
+* open `jupyter notebook` or `jupyter lab`
 * run experiments notebooks under `jupyter_exp/`
+
+## Cite
