@@ -1,4 +1,8 @@
 # Acoustic Scene Classification by Implicitly Identifying Distinct Sound Events
+## Introduction
+This is the code for the paper arxiv:1904.05204 ([download](https://arxiv.org/abs/1904.05204))
+
+The paper is submitted to Interspeech 2019.
 
 ## install
 * create env and activate
@@ -50,4 +54,23 @@ python data_manager/taskb_standrizer.py
 * open `jupyter notebook` or `jupyter lab`
 * run experiments notebooks under `jupyter_exp/`
 
-## Cite
+## Citation
+* BibLatex
+```
+@online{1904.05204,
+Author = {Hongwei Song and Jiqing Han and Shiwen Deng and Zhihao Du},
+Title = {Acoustic Scene Classification by Implicitly Identifying Distinct Sound Events},
+Year = {2019},
+Eprint = {1904.05204},
+Eprinttype = {arXiv},
+}
+```
+* Bibtex
+```
+@misc{1904.05204,
+Author = {Hongwei Song and Jiqing Han and Shiwen Deng and Zhihao Du},
+Title = {Acoustic Scene Classification by Implicitly Identifying Distinct Sound Events},
+Year = {2019},
+Eprint = {arXiv:1904.05204},
+}
+```
